@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+#parent-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    max-height: 445px;
+    margin: 0 0 0 24px;
+    /*background-color: red;*/
+}
+
+.product-img {
+    background-size: cover; /* scales image to cover entire div */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; /* prevents tiling */
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 40px;
+    width: 364px;
+    height: 354px;
+    background-color: #202020;
+    border-radius: 15px;
+}
+
+.product-info-container {
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    margin-left: 5px;
+    /* margin-top: 20px; */
+    /* background-color: yellow; */
+    height: 70px;
+}
+
+.arrow-btn-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.add-product-btn {
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    color: white;
+    font-size: x-small;/*size de letra diminuto*/
+    font-family: sans-serif;
+    border: none;
+    cursor: pointer;/*Para que aparezca un pointer cuando se pone sobre o encima del boton*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;/*Hace la transiccion de 3 segundos del color*/
+    background-color: #1364FF;
+}
+/*Hace el cambio de color en la transicion*/
+.add-product-btn:hover {
+    background-color: #0f4fc8;
+}
+
+.product-title {
+    color: black;
+}
+
+.product-price {
+    font-size: large;
+    margin-top: 1px;
+    color: #1364FF;
+}
+/*
+#add-btn {
+    height: 30%
+}
+*/
